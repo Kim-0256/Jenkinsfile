@@ -11,14 +11,14 @@ pipeline {
 
     stage('Unit and Integration Tests') {
       steps {
-        echo 'Task: Rdun unit tests and integration tests'
+        echo 'Task: Performing unit tests and integration tests'
         echo 'Tool: JUnit'
       }
     }
 
     stage('Code Analysis') {
       steps {
-        echo 'Task: Code Analysis'
+        echo 'Task: PerformingCode Analysis'
         echo 'Tool: SonarScanner'
       }
     }
@@ -32,15 +32,15 @@ pipeline {
 
     stage('Deploy to Staging') {
       steps {
-        echo 'Task: Deploying application to staging serverr'
-        echo 'Tool: Ansible + SSH to AWS EC2'
+        echo 'Task: Deploying application to staging server'
+        echo 'Tool: Ansible'
       }
     }
 
     stage('Integration Tests on Staging') {
       steps {
         echo 'Task: Running Integration tests on staging server'
-        echo 'Tool: Postman / Newman'
+        echo 'Tool: Postman'
       }
     }
 

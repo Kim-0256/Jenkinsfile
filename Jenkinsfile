@@ -6,7 +6,7 @@ pipeline {
       steps {
         echo 'Task: Build the code using Maven'
         echo 'Tool: Maven'
-        echo 'testing commit 2' 
+        // echo 'testing automatic commit' 
       }
     }
 
